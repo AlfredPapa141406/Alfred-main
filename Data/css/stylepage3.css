@@ -1,0 +1,208 @@
+/* Body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('Photos1.jpg'); /* Test with a public image URL */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    text-align: center;
+}
+
+/* Button styling */
+#musicButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#musicButton:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+/* Heading style */
+.main-heading {
+    font-family: 'lucida handwriting', cursive;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 30px 0 10px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Container styling */
+.gallery-container {
+    display: list-item;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    max-width: 500px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+/* Card styling */
+.card {
+    background-color: #fff;
+    background-image: url('https://images.unsplash.com/photo-1517867065801-e20f409696b0?q=80&w=2071&auto=format&fit=crop');
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    max-width: 100%;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.card-text {
+    padding: 10px 10px;
+    font-size: x-large;
+    color: #ffffff;
+    text-align: center;
+    height: auto;
+    line-height: 1.5;
+    white-space: normal;
+    word-wrap: break-word;
+    transition: font-size 0.3s ease;
+    font-style: bold;
+    font-style:italic;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 50px;
+}
+
+.modal-content {
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent dark overlay */
+    background-image: url('https://images.unsplash.com/photo-1517867065801-e20f409696b0?q=80&w=2071&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    max-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+
+.modal img {
+    max-width: 100%;
+    max-height: 70vh;
+    margin-bottom: 20px;
+}
+
+.modal-text {
+    text-align: left; /* Aligns text for better readability */
+    font-size: 1rem;
+    font-style: italic;
+    color: #ffffff;
+    line-height: 1.6;
+    white-space: pre-wrap; /* Preserves line breaks in the text */
+    word-wrap: break-word; /* Breaks long words to prevent overflow */
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #f1f1f1;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 1.5rem;
+        margin: 20px 0;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    .card-text {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-heading {
+        font-size: 1.2rem;
+        margin: 15px 0;
+    }
+
+    #musicButton {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+}
+/* Adjust font size on medium screens (tablets) */
+@media (max-width: 768px) {
+    .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+/* Adjust font size on small screens (phones) */
+@media (max-width: 480px) {
+    .card-text {
+        font-size: 0.8rem;
+    }
+}

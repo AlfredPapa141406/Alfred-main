@@ -1,0 +1,170 @@
+/* Ensure the background image covers the entire screen */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('https://gifsec.com/wp-content/uploads/2022/09/heart-gif-9.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Music button */
+#musicButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#musicButton:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+/* Main container */
+.container {
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(235, 237, 239, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    width: 500px;
+
+}
+
+/* Main container with background image */
+.container {
+    text-align: center;
+    padding: 30px;
+    background-image: url('');
+    background-size: cover; /* Ensures the image covers the container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    width: 500px;
+    height: 300px; /* You can adjust the height based on your needs */
+}
+
+/* Heading animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5rem;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeInUp 2s ease-out forwards;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+}
+
+/* Heart pumping animation */
+@keyframes pumpHeart {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.heart {
+    animation: pumpHeart 2s ease-in-out infinite;
+}
+
+/* Paragraph animations */
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+p {
+    font-size: 2rem;
+    color: #555;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    opacity: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+}
+
+p:first-of-type {
+    animation: slideFromLeft 2s ease-out forwards;
+}
+
+/* Button styles */
+.start-btn {
+    padding: 15px 30px;
+    background-color: #a6acaf;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.start-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Mobile optimization */
+@media (max-width: 320px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1.1rem;
+    }
+}
