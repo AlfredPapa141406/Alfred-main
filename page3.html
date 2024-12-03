@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy First Anniversary</title>
+    <link rel="stylesheet" href="Data/css/stylepage3.css">
+    <style>
+        body {
+            background-image: url('Data/Photos/Green\ Shadow\ Aesthetic.jpg');
+            background-size: 100%; /* Ensures the image covers the entire background */
+            background-position: center; /* Centers the image */
+            background-repeat: repeat; /* Prevents repeating the image */
+            margin: 0; /* Removes default margin */
+            height: 100vh; /* Ensures the body takes up the entire viewport height */
+        }
+    </style>
+</head>
+<body>
+    <h1 class="main-heading">Happy 1st Anniversary love! ❤️</h1>
+    
+    <audio id="backgroundMusic" loop>
+        <source src="Data/music/Lil Eddie - Statue (Lyrics).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <button id="musicButton">Play Music</button>
+
+    <div class="gallery-container">
+        <!-- Card 1 -->
+        <div class="card" onclick="openModal(1)">
+            <img src="Data/Photos/1stdate.jpg" alt="Image 1">
+            <div class="card-text">
+                <h3>1st Date</h3>
+            </div>
+        </div>
+
+        <div class="card" onclick="openModal(1)">
+            <img src="Data/Photos/1stmass.jpg" alt="Image 2">
+            <div class="card-text">
+                <h3>1st Mass</h3>
+            </div>
+        </div>
+
+        <div class="card" onclick="openModal(1)">
+            <img src="Data/Photos/1.jpg" alt="Image 3">
+            <div class="card-text">
+                <h3>Cute</h3>
+            </div>
+        </div>
+
+        <div class="card" onclick="openModal(1)">
+            <img src="Data/Photos/2.jpg" alt="Image 4">
+            <div class="card-text">
+                <h3>Date</h3>
+            </div>
+        </div>
+
+        <div class="card" onclick="openModal(1)">
+            <img src="Data/Photos/MonthsaryGift.jpg" alt="Image 5">
+            <div class="card-text">
+                <h3>MonthsaryGift</h3>
+            </div>
+        </div>
+
+        <div class="card" onclick="openModal(1)">
+            <img src="Data/Photos/ColleenaBirthday.jpg" alt="Image 6">
+            <div class="card-text">
+                <h3>ColleenaBirthday</h3>
+            </div>
+        </div>
+
+        <div class="card" onclick="openModal(1)">
+            <img src="Data/Photos/HEHE.jpg" alt="Image 7">
+            <div class="card-text">
+                <h3>HEHE</h3>
+            </div>
+        </div>
+
+        <div class="card" onclick="openModal(1)">
+            <img src="Data/Photos/Couplebracelet.jpg" alt="Image 8">
+            <div class="card-text">
+                <h3>Couple Bracelet</h3>
+            </div>
+        </div>
+
+        <!-- Add other cards here... -->
+    </div>
+
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="Modal Image">
+            <div id="modalText" class="modal-text"></div>
+        </div>
+    </div>
+
+    <script src="Data/java/scriptpage3.js"></script>
+</body>
+</html>
