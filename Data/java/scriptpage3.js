@@ -14,23 +14,23 @@ const galleryItems = [
     },
     {
         src: "Data/Photos/1stmass.jpg",
-        text: "Our first Mass! 🙏 A deeply meaningful experience where we shared faith and gratitude together."
+        text: "Love, Every time na na-attend tayo ng mass, winiwish ko lagi kay Lord na lagi nya lagi tayo ibless and I wish you all the best na maachieve natin lahat ng goals natin in life na magkasama, and kahit na napapadalas ang ating mga tampuhan at away sana maging center parin natin si Lord until our last breath."
     },
     {
         src: "Data/Photos/1.jpg",
-        text: "Cute! 🐶 A lovely memory that always warms my heart."
+        text: "I love you Colleena, ganda ng pagkakapicture ko sayo dito with coffee, saan nga ba to? eto yung time na nag date tayo after natin mag badminton, sorry kasi di ako mahilig mag coffee and once na nag cocoffee ako sumasama pakiramdam ko. gusto sana kitang sabayan mag coffee lalo na gusto kita yayain lagi mag coffee date."
     },
     {
         src: "Data/Photos/2.jpg",
-        text: "Date 🍕 Another fun and memorable outing together. We had so much laughter!"
+        text: "Love sa 1 year natin magkasama iilan lang yung photos natin together kaya ilang pictures lang din maiilalagay ko dito. pero kahit ganun thankful parin ako na kahit papaano may picture parin tayo together."
     },
     {
         src: "Data/Photos/MonthsaryGift.jpg",
-        text: "Monthsary Gift 🎁 A thoughtful surprise that perfectly captured how much we care for each other."
+        text: "Monthsary Gift 🎁, Naalala mo ba to? eto yung time na medyo nag stastart na yung busy days mo and kahit nasa office ka nag dala parin ako sa bahay nyo ng cake to celebrate our monthsary. and I wish yung mga binigay ko sayo is napapasaya kita kahit papaano and i hope na naappreciate mo mga efforts ko for the whole year 2024."
     },
     {
         src: "Data/Photos/ColleenaBirthday.jpg",
-        text: "Colleena's Birthday 🎉 A celebration of joy and love with unforgettable moments."
+        text: "Colleena's Birthday 🎉 !!!. alam mo sobrang saya ko na makita ka na sobrang happy, hindi ko maipaliwanag yung saya ko for you. na kahit until now habang ginagawa ko to i still remember how i make you happy! na feeling ko gusto kitang yakapin and iparamdam sayo kung gaano kita kamahal na lahat lahat gagawin ko for you just to make you happy."
     },
     {
         src: "Data/Photos/HEHE.jpg",
@@ -38,7 +38,7 @@ const galleryItems = [
     },
     {
         src: "Data/Photos/Couplebracelet.jpg",
-        text: "Bracelet 💕 A symbol of our connection and the cherished moments we share."
+        text: "This bracelet holds our promise: no matter where life takes us, our connection lasts until our very last breath, and I promise you colleena sa araw-araw nating pag aaway I will always choose you no matter what happens in the future. and sabi nga nila: Love means being there for someone, not just when things are easy, but also when life throws challenges your way; it's about staying together through thick and thin ."
     }
 ];
 

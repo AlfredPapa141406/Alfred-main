@@ -2,8 +2,6 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url('Photos1.jpg'); /* Test with a public image URL */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -12,6 +10,11 @@ body {
     color: #333;
     text-align: center;
 }
+.sigmar-one-regular {
+    font-family: "Sigmar One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 /* Button styling */
 #musicButton {
@@ -161,6 +164,9 @@ body {
     color: #bbb;
     text-decoration: none;
 }
+
+
+  
 
 /* Responsive styles */
 @media (max-width: 768px) {
