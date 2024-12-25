@@ -11,12 +11,14 @@
     <style>
         body {
             background-image: url('Data/Photos/Flower.jpg');
-            background-size: 100%; /* Ensures the image covers the entire background */
-            background-position: center; /* Centers the image */
-            background-repeat: repeat; /* Prevents repeating the image */
-            margin: 0; /* Removes default margin */
-            height: 100vh; /* Ensures the body takes up the entire viewport height */
+            background-size: cover; /* Ensures the image adapts to different screen sizes */
+            background-position: center;
+            background-repeat: repeat;
+            margin: 0;
+            height: 100vh;
         }
+
+        /* Additional styles if needed */
     </style>
 </head>
 <body>
@@ -29,8 +31,8 @@
     <button id="musicButton">Play Music</button>
 
     <div class="gallery-container">
-        <!-- Card 1 -->
-        <div class="card" onclick="openModal(1)">
+        <!-- Cards with correct indices -->
+        <div class="card" onclick="openModal(0)">
             <img src="Data/Photos/1stdate.jpg" alt="Image 1">
             <div class="card-text">
                 <h3>1st Date</h3>
@@ -44,51 +46,62 @@
             </div>
         </div>
 
-        <div class="card" onclick="openModal(1)">
+        <div class="card" onclick="openModal(2)">
             <img src="Data/Photos/1.jpg" alt="Image 3">
             <div class="card-text">
                 <h3>Coffee</h3>
             </div>
         </div>
 
-        <div class="card" onclick="openModal(1)">
+        <div class="card" onclick="openModal(3)">
             <img src="Data/Photos/2.jpg" alt="Image 4">
             <div class="card-text">
                 <h3>Your Smile</h3>
             </div>
         </div>
 
-        <div class="card" onclick="openModal(1)">
+        <div class="card" onclick="openModal(4)">
             <img src="Data/Photos/MonthsaryGift.jpg" alt="Image 5">
             <div class="card-text">
                 <h3>Monthsary Gift</h3>
             </div>
         </div>
 
-        <div class="card" onclick="openModal(1)">
+        <div class="card" onclick="openModal(5)">
             <img src="Data/Photos/ColleenaBirthday.jpg" alt="Image 6">
             <div class="card-text">
                 <h3>Colleena's Birthday</h3>
             </div>
         </div>
 
-        <div class="card" onclick="openModal(1)">
+        <div class="card" onclick="openModal(6)">
             <img src="Data/Photos/HEHE.jpg" alt="Image 7">
             <div class="card-text">
                 <h3>SMILE!</h3>
             </div>
         </div>
 
-        <div class="card" onclick="openModal(1)">
+        <div class="card" onclick="openModal(7)">
             <img src="Data/Photos/Couplebracelet.jpg" alt="Image 8">
             <div class="card-text">
                 <h3>Couple Kin Bracelet</h3>
             </div>
         </div>
 
-        <!-- Add other cards here... -->
-    </div>
+        <div class="card" onclick="openModal(8)">
+            <img src="Data/Photos/Promise Ring.jpg" alt="Image 9">
+            <div class="card-text">
+                <h3>Promise Ring</h3>
+            </div>
+        </div>
 
+        <div class="card" onclick="openModal(9)">
+            <img src="Data/Photos/ring.jpg" alt="Image 10">
+            <div class="card-text">
+                <h3>I LOVE YOU COLLEENA!</h3>
+            </div>
+        </div>
+    </div>
 
     <div id="myModal" class="modal">
         <div class="modal-content">

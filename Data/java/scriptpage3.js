@@ -38,10 +38,17 @@ const galleryItems = [
     },
     {
         src: "Data/Photos/Couplebracelet.jpg",
-        text: "This bracelet holds our promise: no matter where life takes us, our connection lasts until our very last breath, and I promise you colleena sa araw-araw nating pag aaway I will always choose you no matter what happens in the future. and sabi nga nila: Love means being there for someone, not just when things are easy, but also when life throws challenges your way; it's about staying together through thick and thin ."
+        text: "This bracelet holds our promise: no matter where life takes us, our connection lasts until our very last breath, and I promise you colleena sa araw-araw nating pag aaway I will always choose you no matter what happens in the future. and sabi nga nila: Love means being there for someone, not just when things are easy, but also when life throws challenges your way; it's about staying together through thick and thin."
+    },
+    {
+        src: "Data/Photos/Promise Ring.jpg",
+        text: "This Promise Ring symbolizes my commitment, faithfulness, loyalty, and I will give my all to you. Colleena Mahal na mahal kita and i will do anything for you. I will do my very best to become a better person for you and also for myself para maibigay ko sayo yung deserve mo in our future just trust me and never let go.  "
+    },
+    {
+        src: "Data/Photos/ring.jpg",
+        text: "I LOVE YOU COLLEENA PAMELA - HAPPY FIRST ANNIVERSARY!."
     }
 ];
-
 
 // Play/Pause music functionality
 let isPlaying = false;
@@ -80,3 +87,6 @@ window.onclick = function (event) {
 document.querySelectorAll(".card").forEach((card, index) => {
     card.addEventListener("click", () => openModal(index));
 });
+
+// Close modal when clicking the close button
+closeButton.addEventListener("click", closeModal);
